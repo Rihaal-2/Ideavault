@@ -41,7 +41,7 @@ def reply(update, context):
 
 # Function to forward the user's message to admins
 def forward_message_to_admins(message, bot):
-    admins = ['5752259504, 834552248']  # Replace with the chat IDs of your bot's admins
+    admins = ['5752259504']  # Replace with the chat IDs of your bot's admins
     for admin_chat_id in admins:
         try:
             forwarded_message = message.forward(chat_id=admin_chat_id)
